@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css box model</title>
+    <style>
+      .content-box {
+        width: 300px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border: 5px solid #000;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .border-box {
+        width: 300px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border: 5px solid #000;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-box">
+      <h1>Content Box</h1>
+      <p>
+        The content box is where the text and images appear. The width and
+        height of the content area can be set using the width and height
+        properties.
+      </p>
+    </div>
+
+    <div class="border-box">
+      <h1>Border Box</h1>
+      <p>
+        The border box includes the content and padding areas. The width and
+        height of the border area can be set using the border property.
+      </p>
+    </div>
+  </body>
+</html>
