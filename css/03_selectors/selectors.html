@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+
+    <style>
+      /* Universal Selectore */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Type Selector */
+      p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      /* Class Selector */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* ID Selector */
+      #header {
+        background-color: #005999;
+      }
+
+      /* Attribute Selector */
+      input[type="text"] {
+        border: 2px solid #003da7;
+      }
+
+      /* Descendant Selector */
+      article p {
+        font-style: italic;
+        background-color: #1a1a1a;
+        color: white;
+        padding: 10px;
+      }
+
+      /* Child Selector */
+      div > p {
+        background-color: #3f71fd;
+      }
+
+      /* Adjacent Sibling Selector */
+      h1 + p {
+        font-weight: bold;
+        color: springgreen;
+      }
+
+      /* General Sibling Selector */
+      h2 ~ p {
+        color: purple;
+      }
+
+      /* Pseudo-class Selector */
+      a:hover {
+        color: #ffffff;
+        padding: 5px;
+        margin: 4px;
+        text-decoration: none;
+        background-color: orangered;
+      }
+
+      /* Psedo-element Selector */
+      p::first-letter {
+        font-size: 24px;
+      }
+
+      /* Grouping Selector */
+      h1,
+      h2,
+      h3 {
+        color: #005999;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">Lorem ipsum dolor sit amet.</header>
+
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      repudiandae quis. Nobis expedita quaerat magnam harum commodi deleniti ad
+      dignissimos.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      repudiandae quis. Nobis expedita quaerat magnam harum commodi deleniti ad
+      dignissimos.
+    </p>
+
+    <p class="highlight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      repudiandae quis. Nobis expedita quaerat magnam harum commodi deleniti ad
+      dignissimos.
+    </p>
+
+    <input type="text" placeholder="enter text here" />
+
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+        possimus voluptatem et sed eveniet cumque quisquam eaque fugit
+        praesentium rem?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+        possimus voluptatem et sed eveniet cumque quisquam eaque fugit
+        praesentium rem?
+      </p>
+
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+          possimus voluptatem et sed eveniet cumque quisquam eaque fugit
+          praesentium rem?
+        </p>
+      </div>
+    </article>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis eum
+      molestias, nesciunt asperiores dignissimos ipsam cupiditate recusandae
+      totam tenetur.
+    </p>
+
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      maiores.
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, natus!
+    </p>
+
+    <a href="#">Lorem ipsum dolor sit amet.</a>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia accusamus
+      totam possimus vero ducimus modi quibusdam ab quasi ut sunt.
+    </p>
+
+    <h3>Lorem ipsum dolor sit.</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut adipisci odit
+      doloremque est ipsam sit dolorum asperiores voluptatum numquam
+      praesentium!
+    </p>
+  </body>
+</html>
